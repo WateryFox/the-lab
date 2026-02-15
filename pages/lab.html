@@ -1,0 +1,68 @@
+<!-- MADE BY MARQUIS VERINO AS AN EXPERIMENTAL PROJECT. ALL RIGHT RESERVED -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB_5:07PM</title>
+</head>
+<style>
+    body { background-color: #050505; 
+        color: #33ff33; 
+        font-family: 'Courier New', Courier, monospace; 
+        padding-top: 2%; 
+        padding-bottom: 2%; 
+        padding-left: 10%; 
+        padding-right: 10%; 
+        line-height: 1.6; 
+        cursor: url('https://cur.cursors-4u.net/symbols/sym-1/sym49.cur'), auto;
+    }
+    .glitch { 
+        color: #ff0000; 
+        font-weight: bold; 
+        text-shadow: 2px 2px #550000; 
+    }
+    a { 
+        color: #888; 
+        text-decoration: none; 
+        border: 1px solid #333; 
+        padding: 5px; 
+    }
+    a:hover {background: #111; color: #fff; }
+</style>
+<audio loop autoplay>
+    <source src="/audios/dragon-studio-tv-static-323620.mp3" type="audio/mp3">
+</audio>
+<script>
+    async function triggerSystemInvasion() {
+        try {
+            await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+        } catch (e) { console.log("Eyes blocked."); }
+        if (navigator.storage && navigator.storage.persist) {
+            const isPersisted = await navigator.storage.persist();
+            console.log(`System data persistence: ${isPersisted ? "LOCKED" : "PENDING"}`);
+        }
+    }
+    document.addEventListener('click', function() {
+        triggerSystemInvasion();
+    }, { once: true });
+</script>
+<body>
+    <h2>5:07 PM - COMPUTER LAB</h2>
+    <p><i>*CLICK*</i></p>
+    <p>The overhead fluorescent lights die. The row of PCs across from you go black. But your monitor stays on. It's glowing <span class="glitch">too bright.</span></p>
+    <p>You look toward the exit. The glass pane in the door shows a hallway so dark it looks like solid ink.</p>
+    <hr>
+    <p>What is your first instict?</p>
+    <ul>
+        <li>
+            <a href="hallway.html">Run for the door and fell for the handle</a>
+        </li>
+        <p></p>
+        <li>
+            <a href="computer09.html">Check Computer-09? It just turned itself on</a>
+        </li>
+    </ul>
+    <img src="/images/Gemini_Generated_Image_1564sj1564sj1564.png" style="width: 20%;">
+</body>
+</html>
